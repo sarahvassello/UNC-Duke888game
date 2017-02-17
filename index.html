@@ -56,13 +56,9 @@
        <p>
          But the game was at the Dean Dome. And they had the fuel of a rivalry on their side.
        </p>
-       <p>
-         Final score: Duke, 66; UNC, 74.
-       </p>
-       <p>
-         Eight days later, against a school eight miles away, the Tar Heels won by eight points.
-       </p>
-
+       <div id="dukeWin">
+      <button @click="say('Nope. 74-66, UNC. #GDTBATH')">Did Duke win?</button>
+       </div>
 
      </div>
      <div class="col-md-6">
@@ -84,48 +80,62 @@
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-6">
-          <h3>Student, junior</h3>
+          <h3>Jane Wester, senior</h3>
           <div class="col-md-5"></div>
       </div>
     </div>
         <div class="row">
           <div class="col-md-1"></div>
           <div class="col-md-4">
-            <blockquote>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
+        <img class="img-responsive" src="images/jane.jpg" alt="Jane as a child.">
+        <blockquote>
+      <p>It was probably the best day of my life.</p>
+      <footer>Jane Wester <cite title="Source Title">senior, basketball enthusiast</cite></footer>
+    </blockquote>
       </div>
         <div class="col-md-6">
-        <p> Meow meow meow meow meow Meow meow meow meow meow
-    Meow meow meow meow meow Meow meow meow meow meow Meow meow meow meow meow Meow meow meow meow meowMeow meow meow meow meow Meow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meow</p>
+        <p> Jane Wester was only a first-year at UNC on Feb. 20, 2014, but she’s been a UNC
+          basketball fan since birth. In her words, her dad indoctrinated her at a young age,
+           and she hasn’t been able to get over it since.
+    </p>
+    <p>
+      She remembers the original date of the Duke game — Feb. 12 — well. She was a first-year
+       and there was no chance she was getting tickets. She planned to watch it in her dorm room
+       with friends.
+    </p>
+    <p>
+      At first, there was not snow. And then classes were canceled.
+    </p>
+    <p>
+      “People were jumping on the tables and screaming and it was awesome,” she said.
+    </p>
+    <p>
+      Her brother, who went to UNC School of Law in the 1990s, texted her as soon as he heard, and
+       said she needed to get down to the Dean Dome as soon as possible. There was a similar situation
+        when he went to UNC. There was a chance she could get in.
+    </p>
+    <p>
+      She was on her way over to stand in line for reserved tickets when she heard the game was canceled.
+    </p>
+    <p>
+      She was crushed, but found solace in the snow.
+    </p>
+    <p>
+      “Those hours of hope and snow play — those were good hours,” she said.
+    </p>
+    <p>
+      Eight days later, she rushed Franklin Street from Ehringhaus, taking breaks to walk because her friend had a concussion.
+    </p>
+    <p>
+      “It’s only in Duke games where your body is taken over by an external force,” she said.
+</p>
+  <p>
+    “The anticipation was definitely the most ever, that afternoon. It’s the one we won.”
+  </p>
         </div>
         <div class="col-md-1"></div>
       </div>
     </div>
-        <div class="slide">
-          <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-6">
-          <h3>Student, junior</h3>
-          <div class="col-md-5"></div>
-      </div>
-    </div>
-        <div class="row">
-          <div class="col-md-1"></div>
-          <div class="col-md-4">
-            <blockquote>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
-      </div>
-        <div class="col-md-6">
-        <p> Meow meow meow meow meow Meow meow meow meow meow
-    Meow meow meow meow meow Meow meow meow meow meow Meow meow meow meow meow Meow meow meow meow meowMeow meow meow meow meow Meow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meow</p>
-        </div>
-        <div class="col-md-1"></div>
-      </div>
-        </div>
         <div class="slide">
           <div class="row">
             <div class="col-md-1"></div>
@@ -245,16 +255,7 @@
         <span id="uncGif"></span>
       </div>
     </div>
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5"></div>
-        <div class="col-md-4">
-          <div id="dukeWin">
-          <center> <button @click="say('Nope. #GDTBATH')">Did Duke win?</button></center>
-          </div>
-        </div>
-        <div class="col-md-1"></div>
-        </div>
+
           <!-- list of duke wins -->
           <div class="row">
             <div class="col-md-1"></div>
