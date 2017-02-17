@@ -12,10 +12,13 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <!--full page plugin -->
   <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+  <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
   <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <!--my css/style elements -->
     <link href="css/stylesheet.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade" rel="stylesheet">
+
 
 
 
@@ -24,25 +27,48 @@
 
 <div class="container-fixed">
     <div id="fullpage">
-      <div class="section">
+      <div class="section body1">
         <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-4">
-        <h1>8 points. 8 days. 8 miles.</h1>
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <h3>Battle of the Blues</h3>
+            <h1>8 points. 8 days. 8 miles.</h1>
    </div>
  </div>
    <div class="row">
      <div class="col-md-1"></div>
-     <div class="col-md-8">
+     <div class="col-md-4">
        <p class="lead">It was February 20, 2014. There was recently a storm.</p>
-       <p> Meow meow meow meow meow Meow meow meow meow meow
-   Meow meow meow meow meow Meow meow meow meow meow Meow meow meow meow meow Meow meow meow meow meowMeow meow meow meow meow Meow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meow</p>
+       <p>
+         Eight days ago, the anticipated UNC-Duke game was snowed out, fans walking away from the
+         Dean Dome with sadness in their eyes and disappointments in their hearts. Classes were
+         canceled for the next day. What should have been a bustling campus on rivalry game day
+          turned into a deserted tundra.
+       </p>
+       <p>
+         Eight miles away, the Duke men’s basketball team went home, getting more time to practice
+        before traveling to UNC.
+       </p>
+       <p>
+         As unpredictable as the North Carolina weather was the UNC men’s basketball team. T
+         hey were on a seven-game streak, but it’s called a streak for a reason — they don’t last.
+       </p>
+       <p>
+         But the game was at the Dean Dome. And they had the fuel of a rivalry on their side.
+       </p>
+       <p>
+         Final score: Duke, 66; UNC, 74.
+       </p>
+       <p>
+         Eight days later, against a school eight miles away, the Tar Heels won by eight points.
+       </p>
+
+
      </div>
-     <div class="col-md-3">
-       <slideshow>
-         <img :src="images[currentNumber]" />
-      </slideshow>
+     <div class="col-md-6">
+       <img class="img-responsive" src="images/fire.jpg" alt="Students set things on fire" >
      </div>
+     <div class="col-md-1"></div>
         </div>
       </div>
       <div class="section">
@@ -148,32 +174,93 @@
         </div>
       </div>
       <div class="section">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
         <h2>A storied history</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-6">
+        <!--games list -->
+        <h4>The most iconic games in the UNC-Duke sphere</h4>
+        <div id="todo-list">
+          <input
+            v-model="newTodoText"
+            v-on:keyup.enter="addNewTodo"
+            placeholder="Add a game"
+            >
+            <ul>
+              <li
+              is="todo-item"
+              v-for="(todo, index) in todos"
+              v-bind:title="todo"
+              @remove="todos.splice(index, 1)"
+              ></li>
+            </ul>
+          </div>
+          <!--start of history text -->
         <p>UNC and Duke have been battling since the dawn of time (or like 1873 or something).
           <p>This is where you are putting your API integration.</p>
           <p>Can also make a Vue.js list of things worse than Duke</p>
-          <div id="dukeWin">
-            <button @click="say('Nope. #GDTBATH')">Did Duke win?</button>
+          <!-- credits text -->
+          <script id="popup-template">
+              <div class="modal-mask">
+                <div class="modal-wrapper">
+                  <div class="modal-container">
+
+                    <div class="popup-header">
+                      <h4>Research Resources  </h4>
+                      <p>Research and certain photos taken with permission from <a href="http://www.dailytarheel.com/article/2014/02/unc-mens-basketball-upsets-no-5-duke-thursday-74-66-after-an-8-day-postponement">The Daily Tar Heel archives</a>, <a href="http://www.dukechronicle.com/article/2017/02/timeline-reliving-the-best-duke-unc-games-of-all-time">The Chronicle archives</a>, interviews and ESPN searches.
+                      Permission granted for the use of the <a href="http://www.dailytarheel.com/multimedia/21924">'Gr8 Expectations'</a> video by The Daily Tar Heel. Pictures of interviewees were provided by the subjects.
+                      </p>
+                    </div>
+
+                    <div class="popup-body">
+                      <h4>Coding Resources</h4>
+                      <p>Giphy API integration help from <a href="https://gist.github.com/nealrs/28dbfe2c74dfdde26a30">nearlrs</a> GitHub user.
+                      Slider JS theme taken under the MIT Licence from Copyright (c) 2013 <a href="https://github.com/alvarotrigo/fullPage.js">Alvaro Trigo</a>.
+                      Extensive Vue.js help taken from the <a href="https://vuejs.org/v2/guide/">Vue.js Guide</a> , including the <a href="https://vuejs.org/v2/guide/events.html#Methods-in-Inline-Handlers">Method in Inline Handlers </a> and <a href="https://vuejs.org/v2/examples/modal.html">Modal Component </a> sections.
+                    </div>
+
+                    <div class="popup-footer">
+                        <button class="modal-default-button" @click="$emit('close')">
+                          OK
+                        </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </script>
+
+          <!-- on click popup section -->
+          <div id="popup">
+            <button id="show-modal" @click="showModal = true"><h6>Credits</h6></button>
+            <modal v-if="showModal" @close="showModal = false"></modal>
           </div>
-          <!-- list of duke wins -->
-          <h4>The most iconic games in the UNC-Duke sphere</h4>
-          <div id="todo-list">
-            <input
-              v-model="newTodoText"
-              v-on:keyup.enter="addNewTodo"
-              placeholder="Add a game"
-              >
-              <ul>
-                <li
-                is="todo-item"
-                v-for="(todo, index) in todos"
-                v-bind:title="todo"
-                @remove="todos.splice(index, 1)"
-                ></li>
-              </ul>
-            </div>
-          <span id="uncGif"></span>
+        </div>
+        <div class="col-md-5">
+          <!-- gif -->
+        <span id="uncGif"></span>
       </div>
+    </div>
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5"></div>
+        <div class="col-md-4">
+          <div id="dukeWin">
+          <center> <button @click="say('Nope. #GDTBATH')">Did Duke win?</button></center>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        </div>
+          <!-- list of duke wins -->
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+          </div>
+    </div>
   </div>
 </div>
 
@@ -184,16 +271,23 @@
 });
 </script>
 
-<!-- student Vue.js slideshow -->
+<!-- credits popup-->
 <script>
- new Vue({
-   el: 'slide-show',
-   data: {
-     image: ['images/students_rush.jpg', 'images/dean_dome.jpg', 'images/fire.jpg' ]
-     currentNumber: 0
-   }
- });
+Vue.component('modal', {
+  template: '#popup-template'
+})
+
+new Vue({
+  el: '#popup',
+  data: {
+    showModal: false
+  }
+})
+
 </script>
+
+<!-- student Vue.js slideshow -->
+
 
 <!-- did Duke win? Vue.js button -->
 <script>
@@ -262,6 +356,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	request.send();
 });
 </script>
+
+  <!--Vue plugin and js file plugin -->
 
 
   </body>
