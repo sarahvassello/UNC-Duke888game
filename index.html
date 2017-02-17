@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>8 Miles. 8 Days. 8 Points.</title>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <link href="js/main.js" rel="javascript">
+
+    <!--bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!--full page plugin -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <!--my css/style elements -->
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+
+  </head>
+  <body>
+
+<div class="container-fixed">
+    <div id="fullpage">
+      <div class="section">
+        <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-4">
+        <h1>8 points. 8 days. 8 miles.</h1>
+   </div>
+ </div>
+   <div class="row">
+     <div class="col-md-1"></div>
+     <div class="col-md-8">
+       <p class="lead">It was February 21, 2014. There was recently a storm.</p>
+       <p> Meow meow meow meow meow Meow meow meow meow meow
+   Meow meow meow meow meow Meow meow meow meow meow Meow meow meow meow meow Meow meow meow meow meowMeow meow meow meow meow Meow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meow</p>
+     </div>
+     <div class="col-md-3">
+       <slideshow>
+         <img :src="images[currentNumber]" />
+      </slideshow>
+     </div>
+        </div>
+      </div>
+      <div class="section">
+        <!-- auto play video -->
+        <div class="fullscreen-bg embed-responsive embed-responsive-16by9">
+          <video muted loop autoplay poster="images/students_rush.jpg" class="fullscreen-bg__video">
+            <source src="dukegame.webm" type="video/webm">
+          </video>
+        </div>
+      </div>
+      <div class="section">
+        <div class="slide">
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+          <h3>Student, junior</h3>
+          <div class="col-md-5"></div>
+      </div>
+    </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+      </div>
+        <div class="col-md-6">
+        <p> Meow meow meow meow meow Meow meow meow meow meow
+    Meow meow meow meow meow Meow meow meow meow meow Meow meow meow meow meow Meow meow meow meow meowMeow meow meow meow meow Meow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meow</p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+        <div class="slide">
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+          <h3>Student, junior</h3>
+          <div class="col-md-5"></div>
+      </div>
+    </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+      </div>
+        <div class="col-md-6">
+        <p> Meow meow meow meow meow Meow meow meow meow meow
+    Meow meow meow meow meow Meow meow meow meow meow Meow meow meow meow meow Meow meow meow meow meowMeow meow meow meow meow Meow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meow</p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+        </div>
+        <div class="slide">
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+          <h3>Student, junior</h3>
+          <div class="col-md-5"></div>
+      </div>
+    </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+      </div>
+        <div class="col-md-6">
+        <p> Meow meow meow meow meow Meow meow meow meow meow
+    Meow meow meow meow meow Meow meow meow meow meow Meow meow meow meow meow Meow meow meow meow meowMeow meow meow meow meow Meow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meow</p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+        </div>
+        <div class="slide">
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-6">
+          <h3>Student, junior</h3>
+          <div class="col-md-5"></div>
+      </div>
+    </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <blockquote>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+      </div>
+        <div class="col-md-6">
+        <p> Meow meow meow meow meow Meow meow meow meow meow
+    Meow meow meow meow meow Meow meow meow meow meow Meow meow meow meow meow Meow meow meow meow meowMeow meow meow meow meow Meow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meowMeow meow meow meow meow</p>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+        </div>
+      </div>
+      <div class="section">
+        <h2>A storied history</h2>
+        <p>UNC and Duke have been battling since the dawn of time (or like 1873 or something).
+          <p>This is where you are putting your API integration.</p>
+          <p>Can also make a Vue.js list of things worse than Duke</p>
+          <div id="dukeWin">
+            <button @click="say('Nope. #GDTBATH')">Did Duke win?</button>
+          </div>
+          <!-- list of duke wins -->
+          <h4>The most iconic games in the UNC-Duke sphere</h4>
+          <div id="todo-list">
+            <input
+              v-model="newTodoText"
+              v-on:keyup.enter="addNewTodo"
+              placeholder="Add a game"
+              >
+              <ul>
+                <li
+                is="todo-item"
+                v-for="(todo, index) in todos"
+                v-bind:title="todo"
+                @remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          <span id="uncGif"></span>
+      </div>
+  </div>
+</div>
+
+<!-- full page theme js-->
+<script>
+  $(document).ready(function() {
+    $('#fullpage').fullpage();
+});
+</script>
+
+<!-- student Vue.js slideshow -->
+<script>
+ new Vue({
+   el: 'slide-show',
+   data: {
+     image: ['images/students_rush.jpg', 'images/dean_dome.jpg', 'images/fire.jpg' ]
+     currentNumber: 0
+   }
+ });
+</script>
+
+<!-- did Duke win? Vue.js button -->
+<script>
+var dukeWin = new Vue ({
+  el: '#dukeWin',
+  methods: {
+    say: function (message) {
+      alert(message)
+    }
+  }
+});
+
+</script>
+
+<script>
+Vue.component('todo-item', {
+  template: '\
+    <li>\
+      {{ title }}\
+      <button v-on:click="$emit(\'remove\')">X</button>\
+    </li>\
+  ',
+  props: ['title']
+})
+new Vue({
+  el: '#todo-list',
+  data: {
+    newTodoText: '',
+    todos: [
+      'Shootout between Duke and UNC in Jan. 1986',
+      'MJ in Space Jam',
+      'March 2, 1975 game: a last second shot by Walter Davis got UNC the win.'
+    ]
+  },
+  methods: {
+    addNewTodo: function () {
+      this.todos.push(this.newTodoText)
+      this.newTodoText = ''
+    }
+  }
+})
+</script>
+
+<!-- giphy integration -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+	q = "unc+basketball"; // search query
+
+	request = new XMLHttpRequest;
+	request.open('GET', 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag='+q, true);
+
+	request.onload = function() {
+		if (request.status >= 200 && request.status < 400){
+			data = JSON.parse(request.responseText).data.image_url;
+			console.log(data);
+			document.getElementById("uncGif").innerHTML = '<img src = "'+data+'"  title="GIF via Giphy">' ;
+		} else {
+			console.log('reached giphy, but API returned an error');
+		 }
+	};
+
+	request.onerror = function() {
+		console.log('connection error');
+	};
+
+	request.send();
+});
+</script>
+
+  <!--Vue plugin and js file plugin -->
+
+
+  </body>
+</html>
