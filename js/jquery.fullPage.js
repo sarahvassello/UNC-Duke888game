@@ -123,7 +123,7 @@
             loopBottom: false,
             loopTop: false,
             loopHorizontal: true,
-            continuousVertical: true,
+            continuousVertical: false,
             normalScrollElements: null,
             scrollOverflow: false,
             scrollOverflowHandler: defaultScrollHandler,
